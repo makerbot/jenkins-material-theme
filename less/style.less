@@ -1,8 +1,8 @@
-@import 'variables';
 @import '../node_modules/jenkins-core-theme/less/functions';
 @import '../node_modules/jenkins-core-theme/less/images';
 @import '../node_modules/jenkins-core-theme/less/codemirror';
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
+@import 'variables';
 
 * {
   font-family: 'Roboto', sans-serif !important;
@@ -228,11 +228,6 @@ table.progress-bar {
   color: @color-red !important;
 }
 
-.jenkins_ver:after {
-  margin-left: 15px;
-  content: 'afonsof.com/jenkins-material-theme v. @@version'
-}
-
 pre {
   a {
     cursor: pointer !important;
@@ -257,4 +252,18 @@ pre {
       filter: brightness(10000);
     }
   }
+}
+
+.logo {
+    background: url(@logopath) 0 no-repeat;
+    display: block;
+    width: 187px;
+    height: 40px;
+    margin: 0px 0 0px 10px;
+}
+#jenkins-head-icon {
+    display: none;
+}
+#jenkins-name-icon {
+    display: none;
 }
