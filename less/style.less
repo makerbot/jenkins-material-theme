@@ -1,6 +1,7 @@
 @import '../node_modules/jenkins-core-theme/less/functions';
 @import '../node_modules/jenkins-core-theme/less/images';
 @import '../node_modules/jenkins-core-theme/less/codemirror';
+@import 'variables';
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
 @import 'variables';
@@ -35,12 +36,13 @@ a, a:hover, a:visited, a:link {
 
 .task-icon-link[href='/'] {
   position: absolute;
-  top: 12px;
-  left: 20px;
+  top: 0;
+  left: 0;
   background-color: @color-link;
-  height: 40px;
-  width: 170px;
+  height: 64px;
+  width: 250px;
   z-index: 3000;
+  padding: 12px;
 
   &:hover {
     opacity: 1 !important;
@@ -171,6 +173,10 @@ table.progress-bar {
 
 #main-panel-content > div:nth-child(2) {
   background-color: transparent !important
+}
+
+#main-panel > pre {
+  font-family: 'Roboto Mono', monospace !important;
 }
 
 .yui-button {

@@ -1,10 +1,13 @@
 {
   "name": "jenkins-material-theme",
-  "version": "1.2.3",
+  "version": "1.3.1",
   "description": "Material design theme for Jenkins",
   "repository": {
     "type": "git",
     "url": "https://github.com/afonsof/jenkins-material-theme"
+  },
+  "scripts": {
+    "test": "grunt"
   },
   "keywords": [
     "material design",
@@ -28,6 +31,7 @@
     "grunt-contrib-jshint": "^0.6.5",
     "grunt-contrib-less": "^1.1.0",
     "grunt-contrib-uglify": "^0.2.7",
+    "grunt-file-creator": "^0.1.3",
     "grunt-image-embed": "^0.3.3",
     "grunt-postcss": "^0.7.2",
     "grunt-replace": "^0.11.0",
